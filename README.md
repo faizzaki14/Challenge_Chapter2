@@ -4,6 +4,8 @@
 
 Nama	: Faiz Zaki Ramadhan
 
+#Project ada didalam folder ChallengeChapter2
+
 #Untuk layout pertama bisa dilihat pada main activity dan hasil output nya seperti yang tertera pada gambar dibawah, kemudian untuk layout 2 bisa dilihat dengan mengklik button seperti pada gambar nomor 3 untuk bisa berpindah ke laoyout ke 2 (shopee) yang output bisa dilihat pada gambar nomor 2
 
 
