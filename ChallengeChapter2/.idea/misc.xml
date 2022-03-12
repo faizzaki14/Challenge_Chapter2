@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/background.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/backgroundsearch.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/bg_abu.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/bg_biru.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/bg_border.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/bg_hijau.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/bg_merah.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/circle_background.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_access_time_filled_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_border_left_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_crop_free_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_dynamic_feed_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_forum_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_hourglass_bottom_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_local_grocery_store_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_new_releases_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_notifications_none_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_screen_share_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_thumb_up_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_unarchive_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_videocam_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_baseline_wysiwyg_24.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/left_background.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/rectangle_background.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/drawable/underline_background.xml" value="0.1" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/layout/activity_main.xml" value="0.2369291859695566" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/layout/activity_shopee_layout.xml" value="0.2845691382765531" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/layout/list_item1.xml" value="0.6794258373205742" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/layout/list_item2.xml" value="0.27734375" />
+        <entry key="..\:/Program MSIB/ANDROID ENGINEER - BINAR ACADEMY/Latihan/Chapter2/ChallengeChapter2/app/src/main/res/layout/list_item3.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

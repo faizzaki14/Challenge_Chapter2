@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/iklan1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backgroundsearch"
+                app:iconifiedByDefault="false"
+                app:queryHint="Cari disini"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/btn_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/ic_baseline_camera_alt_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/searchView"/>
+
+            <ImageButton
+                android:id="@+id/btn_keranjang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/ic_baseline_local_grocery_store_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_chat"/>
+
+            <ImageButton
+                android:id="@+id/btn_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingStart="10dp"
+                android:paddingEnd="0dp"
+                android:layout_marginStart="-40dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/ic_baseline_chat_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="parent"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginRight="20dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:shadowDx="30"
+            android:shadowDy="30"
+            android:shadowRadius="50"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_top">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cv_item_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_baseline_crop_free_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_wallet0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ig_wallet"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iv_scan"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tv_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 16.000"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iv_wallet0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_isi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Isi saldo ShopeePay"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#8A8A8A"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_harga"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_koin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ig_coin"
+                    android:layout_marginStart="120dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iv_wallet0"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tv_koin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 Koin"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/iv_koin"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Klaim koin disini"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#8A8A8A"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tv_koin"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+       <HorizontalScrollView
+           android:id="@+id/hsv_menu"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_marginTop="20dp"
+           app:layout_constraintTop_toBottomOf="@+id/cv_scan"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           >
+
+           <GridLayout
+               android:id="@+id/gl_menu"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+
+               android:columnCount="6"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/cv_scan">
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_list1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_wallet1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingTop="11dp"
+                       android:paddingBottom="10dp"
+                       android:paddingStart="10dp"
+                       android:paddingEnd="10dp"
+                       android:background="@drawable/bg_border"
+                       android:src="@drawable/ig_pedulilindungi" />
+
+                   <TextView
+                       android:layout_marginTop="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="PeduliLindungi"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_listssssss"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_walletssssss"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingTop="8dp"
+                       android:paddingBottom="6dp"
+                       android:paddingStart="8dp"
+                       android:paddingEnd="8dp"
+                       android:background="@drawable/bg_border"
+                       android:src="@drawable/ig_smartphone" />
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:textSize="11sp"
+                       android:layout_height="wrap_content"
+                       android:text="Pulsa, Tagihan, &amp; Hiburan"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_listssss"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_walletssss"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingTop="8dp"
+                       android:paddingBottom="6dp"
+                       android:paddingStart="8dp"
+                       android:paddingEnd="8dp"
+                       android:background="@drawable/bg_border"
+                       android:src="@drawable/ig_shopping_cart" />
+
+                   <TextView
+                       android:layout_width="70dp"
+                       android:textSize="12sp"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:layout_height="wrap_content"
+                       android:text="Shopee  Supermarket"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_listsss"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_walletsss"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingTop="8dp"
+                       android:paddingBottom="6dp"
+                       android:paddingStart="8dp"
+                       android:paddingEnd="8dp"
+                       android:background="@drawable/bg_border"
+                       android:src="@drawable/ig_shopping_bag" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Shopee Mall"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_listss"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_walletss"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingTop="8dp"
+                       android:paddingBottom="6dp"
+                       android:paddingStart="8dp"
+                       android:paddingEnd="8dp"
+                       android:background="@drawable/bg_border"
+                       android:src="@drawable/ig_discount_voucher" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Deals &amp; Promo"
+                       />
+
+               </LinearLayout>
+
+
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_list2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_wallet2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/bg_border"
+                       android:paddingTop="8dp"
+                       android:paddingBottom="6dp"
+                       android:paddingStart="8dp"
+                       android:paddingEnd="8dp"
+                       android:src="@drawable/ig_discount_voucher" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="GoCar"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_list3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_wallet3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:background="@drawable/bg_border"
+                       android:src="@drawable/ig_discount_voucher" />
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:layout_height="wrap_content"
+                       android:text="Gratis Ongkir &amp; Voucher"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_list4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_wallet4"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:background="@drawable/bg_border"
+                       android:src="@drawable/ig_game_controller" />
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:layout_height="wrap_content"
+                       android:text="Shopee Games"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_list5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_wallet5"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/bg_border"
+                       android:padding="10dp"
+                       android:src="@drawable/ig_cash_on_delivery" />
+
+                   <TextView
+                       android:layout_width="80dp"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:layout_height="wrap_content"
+                       android:text="Bayar Di Tempat"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_list6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_wallet6"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/bg_border"
+                       android:padding="10dp"
+                       android:src="@drawable/ig_cutlery2" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Shopee Food"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_list7"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_wallet7"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/bg_border"
+                       android:paddingTop="8dp"
+                       android:paddingBottom="8dp"
+                       android:paddingStart="10dp"
+                       android:paddingEnd="10dp"
+                       android:src="@drawable/ig_box" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Serba Seribu"
+                       />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_menu_list8"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+                   <ImageButton
+                       android:id="@+id/ib_wallet8"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/bg_border"
+                       android:padding="10dp"
+                       android:src="@drawable/ig_application" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Lainnya"
+                       />
+
+               </LinearLayout>
+           </GridLayout>
+
+
+       </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_sponsor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/hsv_menu"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/ib_sponsor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/iklan11" />
+            <ImageButton
+                android:id="@+id/ib_sponsor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/iklan12" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_flash_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flash Sale"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            app:layout_constraintTop_toBottomOf="@+id/ll_sponsor"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_timer_flash_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00 : 12 : 52 "
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="110dp"
+            android:textStyle="bold"
+            android:textColor="#020202"
+            app:layout_constraintTop_toBottomOf="@id/ll_sponsor"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_lihat_lainnya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat lainnya"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="250dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="#989898"
+            app:layout_constraintTop_toBottomOf="@+id/ll_sponsor"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/ib_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:textSize="20dp"
+            android:layout_marginStart="325dp"
+            app:layout_constraintTop_toBottomOf="@id/ll_sponsor"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_flash_sale"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_produk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="10dp"
+                tools:itemCount="2"
+                android:layout_marginTop="20dp"
+                tools:listitem="@layout/list_item3"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/ll_produk"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <LinearLayout
+                android:id="@+id/ll_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginEnd="10dp"
+                >
+                <ImageButton
+                    android:id="@+id/ib_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_thumb_up_24"
+                    android:background="@null"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rekomendasi"
+                    android:textSize="10dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_promo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <ImageButton
+                    android:id="@+id/ib_promo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_dynamic_feed_24"
+                    android:background="@null"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_promo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feed"
+                    android:textSize="11dp"                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_pesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                >
+                <ImageButton
+                    android:id="@+id/ib_pesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_videocam_24"
+                    android:background="@null"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_pesanan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shopee live"
+                    android:textSize="11dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                >
+                <ImageButton
+                    android:id="@+id/ib_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_notifications_none_24"
+                    android:background="@null"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notifikasi"
+                    android:textSize="11dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                >
+                <ImageButton
+                    android:id="@+id/ib_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:background="@null"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textSize="11dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
